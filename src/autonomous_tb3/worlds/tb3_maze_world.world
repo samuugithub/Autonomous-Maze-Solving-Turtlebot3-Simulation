@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <world name="tb3_maze_academic_world">
+    <physics name="default_physics" default="0" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <scene>
+      <ambient>0.34 0.34 0.34 1</ambient>
+      <background>0.96 0.96 0.96 1</background>
+      <shadows>true</shadows>
+    </scene>
+
+    <light type="directional" name="soft_directional_light">
+      <pose>0 0 15 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <diffuse>0.82 0.82 0.82 1</diffuse>
+      <specular>0.12 0.12 0.12 1</specular>
+      <direction>-0.45 0.35 -1</direction>
+    </light>
+
+    <include>
+      <uri>model://tb3_maze_world</uri>
+    </include>
+
+    <model name="checker_floor">
+      <static>true</static>
+
+      <link name="tile_00">
+        <pose>-7.5 -7.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/White</name></script></material></visual>
+      </link>
+      <link name="tile_01">
+        <pose>-2.5 -7.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+      </link>
+      <link name="tile_02">
+        <pose>2.5 -7.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/White</name></script></material></visual>
+      </link>
+      <link name="tile_03">
+        <pose>7.5 -7.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+      </link>
+      <link name="tile_10">
+        <pose>-7.5 -2.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+      </link>
+      <link name="tile_11">
+        <pose>-2.5 -2.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/White</name></script></material></visual>
+      </link>
+      <link name="tile_12">
+        <pose>2.5 -2.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+      </link>
+      <link name="tile_13">
+        <pose>7.5 -2.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/White</name></script></material></visual>
+      </link>
+      <link name="tile_20">
+        <pose>-7.5 2.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/White</name></script></material></visual>
+      </link>
+      <link name="tile_21">
+        <pose>-2.5 2.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+      </link>
+      <link name="tile_22">
+        <pose>2.5 2.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/White</name></script></material></visual>
+      </link>
+      <link name="tile_23">
+        <pose>7.5 2.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+      </link>
+      <link name="tile_30">
+        <pose>-7.5 7.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+      </link>
+      <link name="tile_31">
+        <pose>-2.5 7.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/White</name></script></material></visual>
+      </link>
+      <link name="tile_32">
+        <pose>2.5 7.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+      </link>
+      <link name="tile_33">
+        <pose>7.5 7.5 -0.01 0 0 0</pose>
+        <collision name="collision"><geometry><box><size>5 5 0.02</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5 5 0.02</size></box></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/White</name></script></material></visual>
+      </link>
+    </model>
+  </world>
+</sdf>

@@ -1,0 +1,81 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ''
+  Global Options:
+    Fixed Frame: map
+    Frame Rate: 30
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Plane: XY
+      Cell Size: 1
+      Color: 175; 175; 175
+      Alpha: 0.35
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Show Axes: true
+      Show Arrows: true
+      Frame Timeout: 0
+      Update Interval: 0
+      Marker Scale: 1
+      Frames:
+        All Enabled: false
+        map:
+          Value: true
+        odom:
+          Value: true
+        base_link:
+          Value: true
+        base_footprint:
+          Value: true
+        base_scan:
+          Value: true
+    - Class: rviz_default_plugins/LaserScan
+      Name: Laser Scan
+      Enabled: true
+      Topic:
+        Value: /scan
+      Color: 255; 40; 40
+      Size (m): 0.01
+      Style: Flat Squares
+    - Class: rviz_default_plugins/Map
+      Name: Live Map
+      Enabled: true
+      Topic:
+        Value: /map
+      Alpha: 1.0
+      Color Scheme: map
+    - Class: rviz_default_plugins/Path
+      Name: Global Path
+      Enabled: true
+      Topic:
+        Value: /plan
+      Color: 0; 255; 255
+      Line Width: 0.03
+    - Class: rviz_default_plugins/Path
+      Name: Local Path
+      Enabled: true
+      Topic:
+        Value: /local_plan
+      Color: 0; 255; 255
+      Line Width: 0.03
+    - Class: rviz_default_plugins/RobotModel
+      Name: Robot Model
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+      TF Prefix: ""
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+    - Class: rviz_default_plugins/SetInitialPose
+    - Class: rviz_default_plugins/SetGoal
+    - Class: rviz_default_plugins/PublishPoint
