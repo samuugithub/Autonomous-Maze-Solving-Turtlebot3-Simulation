@@ -95,6 +95,14 @@ Once you have followed all the mentioned steps inside the **Deployment** section
   </video>
 </figure>
 
+The robot autonomously explores the maze, builds a map using SLAM, and navigates using optimal path planning and obstacle avoidance.
+
+📽️ **Simulation Video (Google Drive):**
+https://drive.google.com/file/d/1EZDVLUyGHVrxklQr3vQ9RfAViJCpF9WR/view?usp=sharing
+
+---
+
+
 You can also see the robot following ***the same*** trajectory in the ***2D maze map*** of the **RViz2** environment simultaneously. I could not screen record the **RViz2** simulation to show you - due to my computer hardware limitations.
 
 
