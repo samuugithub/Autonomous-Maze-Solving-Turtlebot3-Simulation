@@ -37,7 +37,7 @@ To deploy this project, please follow the below mentioned steps.
 - **Clone this repository** inside the folder by running the following terminal command.
 
     ```bash
-    (https://github.com/samuugithub/Autonomous-Maze-Solving-Turtlebot3-Simulation.git)
+    https://github.com/samuugithub/Autonomous-Maze-Solving-Turtlebot3-Simulation.git
     ```
 
 - This will create a new folder named **Autonomous-Maze-Solving-Turtlebot3-Simulation** inside the **Cloned Repo** directory.
